@@ -10,6 +10,9 @@ html {
     scroll-behavior: smooth;
     height: auto;
 }
+#logo {
+    width: 100px;
+}
 /*  
  Tema escolhido: no minimo 3 página eno maximo 8 página
  relatorio de linha: maximo 10 pagina 
