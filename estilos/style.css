@@ -130,7 +130,6 @@ p {
 
     margin: 5px;
 
-    text-align: justify;
     text-indent: 30px;
     margin: 4px 20px;
 }
@@ -350,6 +349,9 @@ footer {
 @media screen and (max-width: 730px) {
     #screen_burguer {
         display: block;
+    }
+    .ScreenTexto {
+        width: 90%;
     }
     #btn-mobile {
         display: block;
