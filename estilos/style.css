@@ -3,25 +3,144 @@
     padding: 0px;
     margin: 0px;
 
-    
-}
-menu {
-    background-color: rgb(73, 151, 253);
-    padding: 15px;
-    margin-bottom: 30px;
-}
-menu ul li {
-    cursor: pointer;
-}
-.containerMenu {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    font-family: Arial, 'Times New Roman', sans-serif;
     list-style-type: none;
+}
+html {
+    scroll-behavior: smooth;
+    height: auto;
+}
+/*  
+ Tema escolhido: no minimo 3 página eno maximo 8 página
+ relatorio de linha: maximo 10 pagina 
+*/
+a {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    color: #23232e;
+    padding: 2.5rem;
+}
+h2 {
+    padding: .5rem;
+}
+nav {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #23232e;
+    height: 8vh;
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+}
+#menu li {
+    margin: 0px 10px;
 }
 h1 {
     text-align: center;
     
+}
+
+/* ~ Inicio burguer ~ */
+.flex {
+    display: flex;
+}
+#screen_burguer {
+    display: none;
+    background-color: #23232e;
+    border: none;
+    cursor: pointer;
+}
+#burguer {
+    position: relative;
+    background-color: #23232e;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 50px;
+}
+a#burguer span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+
+    background-color: white;
+    transition: 0.2s all ease;
+}
+
+/* Está é a posição em que deixamos nossos 'traços em branco' parecido ao menu burguer */
+a#burguer span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+a#burguer span:nth-child(2) {
+    transform: translateY(10px);
+}
+
+/* Está é a a posição que faz ao passar o mouse emcima :hover */
+a#burguer:hover span:nth-child(1) {
+    transform: translateY(-15px);
+}
+
+a#burguer:hover span:nth-child(2) {
+    transform: translateY(15px);
+}
+
+/* Quando se está clicado no burguer ele meio que sobe um pouco até desaparecer pois tem opacity 0  */
+a#burguer.active span:nth-child(1) {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+
+a#burguer.active span:nth-child(2) {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+/* Rotação para fazer um X */
+a#burguer.active span:nth-child(3),
+a#burguer:active span:nth-child(4) {
+    transform: rotate(0deg);
+
+}
+
+a#burguer.active span:nth-child(3) {
+    transform: rotate(-45deg);
+
+}
+
+a#burguer.active span:nth-child(4) {
+    transform: rotate(45deg);
+
+}
+/* fim do burguer */
+p {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px;
+
+    text-align: justify;
+    text-indent: 30px;
+    margin: 4px 20px;
+}
+main  li {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px;
+
+    text-align: justify;
+    text-indent: 30px;
+    margin: 4px 40px;
+
 }
 .containerTexto {
     display: flex;
@@ -29,12 +148,25 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+img {
+    width: 50%;
+
+    border-radius: 10px;
+    
+}
+#galeria {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
 .ScreenTexto {
     background-color: #70707054;
 
-    width: 60%;
+    width: 70%;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 
     border-radius: 10px;
     box-shadow: 2px 2px 0px 0px rgb(146, 145, 145);
@@ -44,17 +176,212 @@ h1 {
     border-radius: 10px;
     width: 500px;
 }
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
 
+.content::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 75px;
+    
+}
+section.screenTexto.maisProjetos .content {
+    height: auto;
+}
+section.screenTexto.maisProjetos .content::before {
+    visibility: hidden;
+}
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+}
 
+.overlay:hover {
+    opacity: 1;
+    transition: 1.5s;
+}
 
-
-
-
-
-footer {
-    background-color: #70707054;
-    margin: 100px 0px 0px 0px;
-    padding: 2px;
+.overlay h2 {
     text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+#pOverlay {
+    display: block;
+    margin: auto 20px;
+
+    text-align: justify;
+}
+#noticias {
+    background-color: #23232e;
+    padding: 40px;
+}
+.img-port {
+    margin: 8px 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    background-color: #0554F2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    transition: 7s;
+    cursor: pointer;
+}
+
+#contato {
+    padding: 200px 0px 30px 0px;
+    max-width: 800px;
+    margin: 0 auto;    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 3%;
+}
+form h2 {
+    font-weight: bolder;
+    text-align: center;
+}
+form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    background-color: #232332;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1a1a2e;
+}
+
+#btnTop {
+    position: fixed;
+    background-color: #0554F2;
+    bottom: 35px;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+footer {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+
+    background-color: #23232e;
+    color: white;
+}
+.copyrightText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    margin-top: 1px;
+    padding: 5px;
+    text-align: center;
+    background-color: #23232e;
+}
+.ScreenTexto img {
+    margin: 0px 25%;
+}
+#btn-mobile {
+    display: none;
+}
+/* Inicio programação para mobile */
+@media screen and (max-width: 730px) {
+    #screen_burguer {
+        display: block;
+    }
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        right: 0px;
+        background-color: #23232e;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+    #menu li {
+        padding: 43px 0; 
+    }
+    #menu li:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.219);
+    }
+    #menu li > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #nav.active #menu {
+        height: calc(65vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }    
 }

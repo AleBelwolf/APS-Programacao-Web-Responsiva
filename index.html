@@ -9,37 +9,128 @@
 <body>
     <header>
         <!-- Caso agente queira fazer um menú interativo, mais pra frente se tiver muitos tópicos é possivel redirecionar rapidamente com 1 click no menu -->
-        <menu>
-            <ul class="containerMenu">
-                <li>Menu 1</li>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-                <li>Menu 4</li>
+        <nav id="nav">
+            <a href="/" id="logo">Logo</a>
+                <div id="hamburguer" >
+                    <span class="animacao"></span>
+                    <span class="animacao"></span>
+                    <span class="animacao"></span>
+                    <span class="animacao"></span>
+                    <button id="screen_burguer"  onclick="burguer()">
+                        <div id="elementBurguer">
+                            <a id="burguer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </button>
+                </div>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contato">Fale conosco</a></li>
             </ul>
-        </menu>
+        </nav>
     </header>
+    <main></main>
     <h1>Alterações Climáticas</h1>
     <!-- Onde colocaremos nosso conteudo -->
     <main class="containerTexto">
         <div class="ScreenTexto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sint excepturi! Iure deserunt atque, dignissimos quis vero eaque fugiat, sequi vel magnam, expedita tempore consequatur itaque adipisci facere repudiandae nihil!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic esse non, eius explicabo distinctio officiis dicta cumque beatae doloribus pariatur architecto neque consequuntur fugit sunt quas unde laborum, autem ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam error illo vitae adipisci fugit commodi amet, eum accusantium dolorum. Voluptates fuga explicabo, veritatis magni ab enim eveniet qui? Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vel, aliquam dolores fugiat itaque necessitatibus! Consectetur fugit odit quisquam amet vero earum architecto laudantium pariatur sit at. Tenetur, quisquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam sed optio veritatis distinctio repellendus earum dignissimos fugiat modi corporis! Odio fugit accusantium ipsa assumenda nobis illum culpa corrupti laudantium?</p>
+            <p>Para que seja alcançado um alto nível de desenvolvimento sustentável no mundo, a ONU propôs uma série de objetivos a serem concluidos pelos países membros, até o ano 2030. Dentre esses requisitos, está contida uma medida relacionada ás mudanças climáticas, que tem como intenção, combater os agentes causadores, para que com isso, os impactos ao meio ambiente fossem reduzidos.</p>
+            <p>As questões das alterações no clima vêm recebendo muita preocupação, pois a cada ano, a frequência com o qual anomalias climáticas vêm ocorrendo têm aumentado, como o aumento de períodos de secas, e incremento do volume de chuvas, e com isso, trazendo consequências como crescimento no número de desastres naturais no mundo todo. Problemas como elevação dos níveis marítimos, enchente, desmoronamentos, ondas de calor persistentes, derretimento de galeiras, destruição de vegetação, entre outros.</p>
+            <p>Para isso, identificou-se como necessária a criação de normas reguladoras na intenção de reduzir esses efeitos que, em sua maioria, tem como causador o próprio ser humano, sendo nas questões de poluição, como na liberação de gases estufa pelas indústrias, desmatamento de áreas nativas para cultivo, criação de animais e mineração, além de vários outros fatores.</p>
+            <p>Entre tantos fatores, os efeitos mais prejudativos são:</p>
+            <li>- Temperaturas mais altas</li>
+            <li>- Tempestades mais severas</li>
+            <li>- Aumento da seca</li>
+            <li>- Aumento dos níveis d`água do mar</li>
+            <li>- Perda de espécies</li>
+            <li>- Escassez de alimentos</li>
+            <li>- Riscos para a saúde</li>
+            <li>- Pobreza e deslocamento</li>
         </div>
+        <img src="imagens/Imagem-Intro.jpg" alt="poluição">
         <div class="ScreenTexto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse libero ullam temporibus sit delectus corrupti exercitationem nesciunt velit beatae ipsum, numquam enim dolorem explicabo inventore magni quidem veniam eius? Accusamus!</p>
+            <p>A preocupação em torno das alterações climáticas que vêm ocorrendo com maiores frequências ao redor do mundo, uma vez que esses eventos estão diretamente ligados com o fenômeno do aquecimento global e a emissão dos gases de efeito estufa na atmosfera.</p>
+            <p>O conceito do aquecimento global consiste em um fenômeno que acontece quando há um aumento anormal das temperaturas da superfície terrestre, causado pela liberação de gases como o dióxido de carbono (CO2), metano (CH4) e óxido nitroso (N2O) e vapor d’água (H2O) na atmosfera. Gases estes que são chamados de gases de efeito estufa (GEE). Esses gases, que estão contidos na atmosfera, são responsáveis pela manutenção da temperatura no planeta. O problema ocorre quando há uma concentração maior desses gases, causados principalmente por ações humanas como queima de combustíveis fósseis e desmatamento, o que resulta em uma maior retenção de calor na atmosfera, fazendo com que as temperaturas aumentem e com isso, elevando os níveis do mar, contribuindo para o aquecimento global</p>
         </div>
+        <img src="imagens/Image-2.png" alt="usinas">
         <div class="ScreenTexto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sint excepturi! Iure deserunt atque, dignissimos quis vero eaque fugiat, sequi vel magnam, expedita tempore consequatur itaque adipisci facere repudiandae nihil!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic esse non, eius explicabo distinctio officiis dicta cumque beatae doloribus pariatur architecto neque consequuntur fugit sunt quas unde laborum, autem ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam error illo vitae adipisci fugit commodi amet, eum accusantium dolorum. Voluptates fuga explicabo, veritatis magni ab enim eveniet qui? Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vel, aliquam dolores fugiat itaque necessitatibus! Consectetur fugit odit quisquam amet vero earum architecto laudantium pariatur sit at. Tenetur, quisquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam sed optio veritatis distinctio repellendus earum dignissimos fugiat modi corporis! Odio fugit accusantium ipsa assumenda nobis illum culpa corrupti laudantium?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus consequuntur non obcaecati culpa fugit soluta aspernatur expedita voluptatem ut nesciunt neque adipisci, reiciendis accusantium eos</p>
+            <p>Os países que apresentam os maiores índices de emissão de GEE são China, EUA, União Europeia, Índia e Rússia, como mostra o gráfico abaixo. No entanto, estima-se que EUA e Rússia são detentores dos maiores índices de emissões per capita, com o equivalente  a 17,6 toneladas de dióxido de carbono por pessoa </p>
         </div>
-        <div>
-            <img src="imagens/MorroMamao.jpg" alt="MorrmoMamões" class="imagem">
+        <img src="imagens/image-Paises.png" alt="grafio">
+        <div class="ScreenTexto">
+            <p>No Brasil, avalia-se que o país emitiu cerca 2,4 bilhões de toneladas brutas de gás carbônico em 2021, considerado o maior aumento de emissões em duas décadas, sendo o ano de 2003 o maior registro até então, quando as emissões atingiram um pico histórico. </p>
+            <p>Na área de desmatamento, a Amazônia continua a registrar altos índices de perda de vegetação, com a maior taxa de desmatamento dos últimos 15 anos, o que ocasionou em um aumento nas emissões dos gases.  Além disso, o Cerrado também registrou uma diminuição do seu território. </p>
+            <p>Calcula-se que em 2021, a poluição climática gerada pelas alterações do solo para seu uso subiu 18,5%, e que a destruição dos biomas brasileiros chegou a emitir cerca de 1,19 bilhão de toneladas de CO2. </p>
+            <p>O setor de geração de energia também apresentou alta no volume de emissões, com um aumento de 12,5%, o maior registrado em 50 anos, com o total sendo de 435 milhões de toneladas. Este aumento está relacionado à retomada da economia no período pós-COVID-19, assim como um período de seca extrema que ocasionou em prejuízos na geração de energia pelas hidrelétricas, e diminuiu o uso do etanol.</p>
+        </div>
+        <img src="imagens/image-grafic.png"grafico">
+        <div class="ScreenTexto">
+            <p>Entre as consequências do constante aumento de emissões desses gases na atmosfera, estão o aumento de temperaturas que por sua vez contribui para a elevação do nível dos oceanos, derretimento de geleiras, desertificação, alteração do regime de chuvas, aumento de inundações e a redução da biodiversidade. </p>
+        </div>
+        <img src="imagens/image-iceberg.png" alt="">
+        <div class="ScreenTexto">
+            <p>Para que fossem contidas as consequências do avanço das mudanças climáticas, uma série de medidas foram criadas, em um plano que deveria ser aderido por todos os países do mundo, com o objetivo de manter o aumento da temperatura global em 1,5ºC, reduzindo pela metade a taxa de emissão de gases do efeito estufa até o ano de 2030.</p>
+            <p>Ainda que vários países, cidades, empresas e investidores indicaram que iriam se comprometer a ajudar a cumprir estas metas, estudos mostraram que os esforços não só foram ineficientes, como foi constatado que os setores que mais emitem GEE no mundo, como energia, indústria, construção, transportes, alimentos e agricultura, estão fazendo as mudanças necessárias em um ritmo extremamente lento.</p>
+        </div>
+        <img src="imagens/image-aquec.png" alt="">
+        <div class="ScreenTexto">
+            <p>Contudo, dentre esses setores, o setor energético tem se mostrado em maior evolução, uma vez que a adoção de fontes com emissão zero de carbono, como energia solar e eólica, vem apresentando um bom índice de crescimento, com estudos mostrando que durante o período de 2019 a 2021, a geração de energia por meio solar aumentou 47%, e energia eólica 31%.</p>
+            <p>Apesar disso, a quantidade total de energia gerada continua aumentando com o passar dos anos e a necessidade da população, resultando na expansão do uso de fontes não renováveis de energia, como geração por meio do gás, e a queima de carvão, utilizada em países como Japão, China e Índia.</p>
+            <p>No setor de transportes, a frota de veículos segue em crescimento, resultando no aumento nos índices de emissões. Algumas medidas para buscar reduzir são o aumento de investimentos em transporte público, nas infraestruturas da malha ferroviária e de ciclovias. Além disso, o avanço das tecnologias e a utilização de veículos movidos a energia elétrica também podem contribuir para o alcance dessa meta.</p>
+            <p>A criação de acordos internacionais na tentativa de controlar as mudanças climáticas teve início das discussões em 1992, no Rio de Janeiro, pelos países-membros da Organização das Nações Unidas. Com isso, foi formado a Convenção das Nações Unidas para as Mudanças Climáticas.</p>
+        </div>
+        <img src="imagens/image-cúpulas.png" alt="">
+        <div class="ScreenTexto">
+            <p>O primeiro dos acordos estabelecidos foi o Protocolo de Quioto, que tinha como objetivo a criação de metas para reduzir a emissão de gases do efeito estufa na atmosfera. Para isso, foi definido que os países desenvolvidos teriam uma série de metas e prazos para serem cumpridos, enquanto países em desenvolvimento estariam dispensáveis dessas exigências. Esse acordo foi assinado em 1997, mas só entrou em vigência no ano de 2005. </p>
+            <p>Outro principal acordo criado foi o Acordo de Paris. Assinado em 2015 por 195 países, e entrando em vigor no ano de 2016, teve como objetivo combater o aquecimento global, na tentativa de manter a média do aumento de temperatura da Terra abaixo dos 2ºC. Também apresentou negociações para o mercado global de carbono, para substituir os mecanismos de desenvolvimento limpo. Foi estabelecido que os países desenvolvidos deveriam dar suporte tecnológico e financeiro para os países subdesenvolvidos. Além disso, sugeriu que os governos comunicassem as contribuições para as metas a cada cinco anos.</p>
+            <p></p>
         </div>
     </main>
-    <!-- Onde vai ficar nosso rodapé, colocaremos dados nossos -->
+    <h1>As principais noticias</h2>
+    <section class="content flex" id="noticias">
+        <a href="Paginas/brumadinho.html" target="_blank" id="Brumadinho">
+            <div class="img-port" style="background-image: url(imagens/Brumadinho.png);">
+                <div class="overlay">
+                    <h2>MG - Brumadinhos</h2>
+                    <p id="pOverlay">Acidente que ocorre em Brumadinhos que causa mais de 270 mortos e desparecidos até o momento, um desastre ambiental chocante ocorrido em 2019</p>
+                </div>
+            </div>
+        </a>
+        <a href="Paginas/RioGrandeSul.html" target="_blank" id="RioGrandeDoSul">
+            <div class="img-port" style="background-image: url(imagens/RioGrandeDSul.png);">
+                <div class="overlay">
+                    <h2>Rio Grande Do Sul</h2>
+                    <p id="pOverlay">Recentemente houve um grande enchente que devastou o estado, causando prejuízo de R$ 2,2 bilhões e na morte de 73 pessoas além de desaparecidos. Vai ser marcado na história o incidente que parou o Brasil e chocou o mundo.</p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section id="contato">
+        <h1>Fale Conosco</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     <footer>
-        <p>Footer</p>
+        <p>Todos os direitos reservados ao grupo de estudantes UNIP 2024©.</p> 
     </footer>
+    <a href="#top" id="btnTop">
+        <div class="arrow up"></div>
+    </a>
+    <div class="copyrightText">
+        <p>José Alejandro V. Loma  -  Rennan Affonso Ramos  -  Pedro Henrique Kanegae  -  Gabriel Metzker Hirose  -  Emanuel Lins Dos Santos</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
