@@ -35,7 +35,7 @@ nav {
     align-items: center;
 
     background-color: #23232e;
-    height: 8vh;
+    height: 10vh;
 }
 #menu {
     display: flex;
@@ -361,7 +361,7 @@ footer {
         flex-direction: column;
         position: absolute;
         width: 100%;
-        top: 60px;
+        top: 50px;
         right: 0px;
         background-color: #23232e;
         height: 0px;
@@ -385,8 +385,7 @@ footer {
     }
     
     #nav.active #menu {
-        height: calc(65vh - 70px);
+        height: calc(80vh - 0px);
         visibility: visible;
-        overflow-y: auto;
     }    
 }
