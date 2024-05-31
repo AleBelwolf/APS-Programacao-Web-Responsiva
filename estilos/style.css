@@ -13,6 +13,12 @@ html {
 #logo {
     width: 100px;
 }
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
 /*  
  Tema escolhido: no minimo 3 página eno maximo 8 página
  relatorio de linha: maximo 10 pagina 
